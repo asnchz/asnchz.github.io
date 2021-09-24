@@ -1,6 +1,91 @@
-
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background-color:#b2b1b9;
-    margin:0px;
-    padding:0px;
+    background-color: #b2b1b9;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+#home{
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: center;
+    place-content: center;
+}
+h1{ 
+    text-align: center;
+    font-size: 4rem;
+    color: #ffd523;
+    font-variant: small-caps;
+}
+
+h2{
+    font-size: 2.5rem;
+    color:#595260;
+    font-variant: small-caps;
+    margin-bottom: 0;
+}
+h3{
+    font-size: 2.5rem;
+    text-align: center;
+    color:#2c2e43;
+    font-variant: small-caps;
+} 
+h4{
+    color:#2c2e43;
+    font-variant: small-caps;
+}
+h5{
+    font-size: 1.50rem;
+    color:#2c2e43;
+    font-variant: small-caps;
+}
+h6{ 
+    text-align: center;
+    font-size: 2rem;
+    color: #ffd523;
+    font-variant: small-caps;
+    margin-bottom: 0;
+}
+a, p{
+    color: #2c2e43;
+    padding: 1.5rem;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+ul{
+    color: #2c2e43;
+    display: flex;
+    justify-content:right;
+    margin: 0 2rem;
+    padding: 35px 50px;
+    font-variant: small-caps;
+    word-spacing: normal;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+}
+img{
+    padding:1px;
+    border:thin solid black;
+    
+}
+.striped-border { 
+    border: 1px dashed #000; 
+    width: 55%; margin: auto; 
+    margin-top: 20px; 
+    margin-bottom: 40px; 
+}
+.text{
+   text-align: justify;
+   vertical-align: top;
+   padding-left: 20px;
+}
+.aboutme{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
