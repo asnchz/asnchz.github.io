@@ -1,93 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="author" content="Sanchez">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="author" content="Sanchez" />
     <title>A. Sanchez | Portfolio</title>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <div class= "striped-border">
-    </div>
-    <section id="home">
-        <div class="container">
-            <h1>I am Sanchez.</h1>
-            <h3>Full Stack Web Developer</h3>
-            <h3>Let's Create!</h3>
+  </head>
+  
+  <body>
+    <!-- Header -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero">
+              <h1><span>A.Sanchez</span></h1>
+            </a>
+          </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li><a href="#projects" data-after="Projects">Projects</a></li>
+              <li><a href="#about" data-after="About">About</a></li>
+              <li><a href="#contact" data-after="Contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
-    <div class= "striped-border">
-    </div>
-    <section>
-        <div class="aboutme">
-            <img src="images/IMG_2744.jpg" alt="Me, Myself and a bird." style="width:400px;height:600px;">
-            <div class="text">
-            <h2>Hello!</h2>
-            <h5>I am Araceli Sanchez from Milwaukee, Wisconsin. A passion for creating and building new things lead me to the home remodeling business right after high school.
-                 Although I enjoyed what I did, I've recently gotten an interest in creating in different ways. I am always up for a new challenge and even more if it's going 
-                 to continue building me as a professional. </h5>
-            </div>
+    <!-- End Header -->
+  
+    <!-- Hero Section  -->
+    <section id="hero">
+      <div class="hero container">
+        <div>
+          <h1>Hello, <span></span></h1>
+          <h1>My name is <span></span></h1>
+          <h1>Sanchez <span></span></h1>
+          <a href="#projects" type="button" class="cta">Portfolio</a>
         </div>
+      </div>
     </section>
-    <div class= "striped-border">
-    </div>
-    <section id= "projects">
-        <h2 style="color:#595260 ;text-align:center;">Projects</h2>
-        <div class="grid-container">
-            <div class="project1">
-                <h5>Day Trip Generator</h5>
-                <h4>Javascript Application</h4>
-                <a href="https://github.com/asnchz/Mx.DayTripGen.gitclass">Check it out</a>
-            </div>
-        
-            <div class="project2">
-               <h5>Robots vs. Dinosaurs</h5>
-               <h4>Python Application</h4>
-                <a href="https://github.com/asnchz/Week3.Robots_vs_Dinosaurs.git">Check it out</a>
-            </div>
-            <div class="project3">
-                <h5>RPSLS</h5>
-                <h4>Python Application</h4>
-                <a href="https://github.com/asnchz/RPSLS.git">Check it out</a>
-            </div>
-        
-            <div class="project4">
-                <h5>Project 4</h5>
-                <h4>On it's way!</h4>
-                 <!--<a href=>Check it out</a>-->
-            </div>
-            <div class="project5">
-                <h5>Project 5</h5>
-                <h4>On it's way!</h4>
-                <!--<a href=>Check it out</a>-->
-            </div>
-        
-            <div class="project6">
-               <h5>Project 6</h5>
-               <h4>On it's way!</h4>
-                <!--<a href=>Check it out</a>-->
-            </div>
-        </div>
-    </section>
-    <div class= "striped-border">
-    </div>
-    <section id="contact">
-        <h6>Contact Me</h6>
-        <div class="grid-container">
-            <a class="link1" href="https://www.linkedin.com/in/araceli-sanchez-136846220/">LinkedIn</a>
-            <a class="link2" href="https://github.com/asnchz">Github</a>
-            <a class="link3" href="asnchz27@yahoo.com">Email</a>
-        </div>
-    </section>
+    <!-- End Hero Section  -->
 
-</body>
+    <!-- About Section -->
+    <section id="about">
+      <div class="about container">
+        <div class="col-left">
+          <div class="about-img">
+            <img src="./img/IMG_4024.jpg" alt="img">
+          </div>
+        </div>
+        <div class="col-right">
+          <h1 class="section-title">About <span>me</span></h1>
+          <h2>Software Developer</h2>
+          <p>I am Araceli Sanchez from Milwaukee, Wisconsin. A passion for creating and building new things lead me to the home remodeling industry right after high school.
+            Although I enjoyed what I did, I knew I wanted something that would constantly challenge me.</p>
+          <a href="#" class="cta">Resume</a>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+  
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="projects container">
+        <div class="projects-header">
+          <h1 class="section-title">Recent <span>Projects</span></h1>
+        </div>
+        <div class="all-projects">
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Day Trip Generator</h1>
+              <h2>Javascript Application</h2>
+              <p>This javascript project demonstrates how to select variables randomly and the ability to reassign those variables. It also demonstrates the ability to write and utilize functions.</p>
+            </div>
+            <div class="project-img">
+              <img src="" alt="img">
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+  
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact container">
+        <div>
+          <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+            <div class="contact-info">
+              <h1>Email</h1>
+              <h2>asnchz27@yahoo.com</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png" /></div>
+            <div class="contact-info">
+              <h1>LinkedIn</h1>
+              <a href="www.linkedin.com/in/asnchz" >@asnchz</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+  
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer container">
+        <p>Copyright © 2022 A. Sanchez</p>
+      </div>
+    </section>
+  </body>
 </html>
